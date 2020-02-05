@@ -3,6 +3,7 @@ package com.company;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main {
@@ -67,13 +68,40 @@ public class Main {
         d.add(100);
         d.add(5);
 
-        for(int j=0;j<d.size();) {
+      /*  for(int j=0;j<d.size();) {
             if(d.get(j)>10) {
                 System.out.println(d.remove(j));
             } else {
                 j++;
             }
         }
+*/
+        ArrayList<Integer> abc = new ArrayList<>();
+        Collections.addAll(abc, 1,5,7,8,9,100);
+        //abc.clone();
+
+
+        //ArrayList<Integer> y = new ArrayList<>();
+        //for(int i=0;i<x.length;i++) y.add(x[i]);
+
+
+
+        Integer [] x = {3,4,5};
+        List<Integer> v = Arrays.asList(x);
+
+        String [] word = {"cat","dsfs","sdfsfsf"};
+        List<String> z = Arrays.asList(word);
+
+        List<Integer> q = new ArrayList<>();
+        q.add(3); q.add(333);
+        Integer[] u = q.toArray(new Integer[q.size()]);
+
+        for(Integer mm: u ) {
+          System.out.print(mm + " ");
+        }
+
+
+
 
 
 
